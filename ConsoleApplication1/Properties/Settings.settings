@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ConsoleApplication1.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ConsoleApplication1_Orcl_ldbs3_Orcl_Idbs3" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://218.1.102.107:702/Orcl_Idbs3.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

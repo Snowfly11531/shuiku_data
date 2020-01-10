@@ -1,0 +1,1673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDtTableXY">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="e" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="f" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDtTableXYResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDtTableXYResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDtSTCD8">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDtSTCD8Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDtSTCD8Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSQStcdTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSQStcdTableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetSQStcdTableResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHDSWXTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetHDSWXTableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetHDSWXTableResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DBODSWX_XY_Dt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="e" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="f" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DBODSWX_XY_DtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DBODSWX_XY_DtResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDtYQ">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="e" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="f" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="g" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDtYQResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetDtYQResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetYQStcdTable">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetYQStcdTableResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetYQStcdTableResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DZX_Dt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="e" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DZX_DtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DZX_DtResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Getliuyujy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetliuyujyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetliuyujyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Getliuliang">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetliuliangResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetliuliangResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fx_liuyucj_sdstate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fx_liuyucj_sdstateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fx_liuyucj_sdstateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fx_liuyucj_sdmax">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fx_liuyucj_sdmaxResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fx_liuyucj_sdmaxResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fx_liuyucj_state">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fx_liuyucj_stateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fx_liuyucj_stateResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ToStrong">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="b" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ToStrongResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ToStrongResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+                  <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fx_liuyujy">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="e" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="f" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fx_liuyujyResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fx_liuyujyResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fx_fenqu">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="a" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="b" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="c" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="d" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="e" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="f" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fx_fenquResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fx_fenquResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="DataTable" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:any minOccurs="0" maxOccurs="unbounded" namespace="http://www.w3.org/2001/XMLSchema" processContents="lax" />
+            <s:any minOccurs="1" namespace="urn:schemas-microsoft-com:xml-diffgram-v1" processContents="lax" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDtTableXYSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDtTableXY" />
+  </wsdl:message>
+  <wsdl:message name="GetDtTableXYSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDtTableXYResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDtSTCD8SoapIn">
+    <wsdl:part name="parameters" element="tns:GetDtSTCD8" />
+  </wsdl:message>
+  <wsdl:message name="GetDtSTCD8SoapOut">
+    <wsdl:part name="parameters" element="tns:GetDtSTCD8Response" />
+  </wsdl:message>
+  <wsdl:message name="GetSQStcdTableSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSQStcdTable" />
+  </wsdl:message>
+  <wsdl:message name="GetSQStcdTableSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSQStcdTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetHDSWXTableSoapIn">
+    <wsdl:part name="parameters" element="tns:GetHDSWXTable" />
+  </wsdl:message>
+  <wsdl:message name="GetHDSWXTableSoapOut">
+    <wsdl:part name="parameters" element="tns:GetHDSWXTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="DBODSWX_XY_DtSoapIn">
+    <wsdl:part name="parameters" element="tns:DBODSWX_XY_Dt" />
+  </wsdl:message>
+  <wsdl:message name="DBODSWX_XY_DtSoapOut">
+    <wsdl:part name="parameters" element="tns:DBODSWX_XY_DtResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDtYQSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDtYQ" />
+  </wsdl:message>
+  <wsdl:message name="GetDtYQSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDtYQResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetYQStcdTableSoapIn">
+    <wsdl:part name="parameters" element="tns:GetYQStcdTable" />
+  </wsdl:message>
+  <wsdl:message name="GetYQStcdTableSoapOut">
+    <wsdl:part name="parameters" element="tns:GetYQStcdTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="DZX_DtSoapIn">
+    <wsdl:part name="parameters" element="tns:DZX_Dt" />
+  </wsdl:message>
+  <wsdl:message name="DZX_DtSoapOut">
+    <wsdl:part name="parameters" element="tns:DZX_DtResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetliuyujySoapIn">
+    <wsdl:part name="parameters" element="tns:Getliuyujy" />
+  </wsdl:message>
+  <wsdl:message name="GetliuyujySoapOut">
+    <wsdl:part name="parameters" element="tns:GetliuyujyResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetliuliangSoapIn">
+    <wsdl:part name="parameters" element="tns:Getliuliang" />
+  </wsdl:message>
+  <wsdl:message name="GetliuliangSoapOut">
+    <wsdl:part name="parameters" element="tns:GetliuliangResponse" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_sdstateSoapIn">
+    <wsdl:part name="parameters" element="tns:fx_liuyucj_sdstate" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_sdstateSoapOut">
+    <wsdl:part name="parameters" element="tns:fx_liuyucj_sdstateResponse" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_sdmaxSoapIn">
+    <wsdl:part name="parameters" element="tns:fx_liuyucj_sdmax" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_sdmaxSoapOut">
+    <wsdl:part name="parameters" element="tns:fx_liuyucj_sdmaxResponse" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_stateSoapIn">
+    <wsdl:part name="parameters" element="tns:fx_liuyucj_state" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_stateSoapOut">
+    <wsdl:part name="parameters" element="tns:fx_liuyucj_stateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ToStrongSoapIn">
+    <wsdl:part name="parameters" element="tns:ToStrong" />
+  </wsdl:message>
+  <wsdl:message name="ToStrongSoapOut">
+    <wsdl:part name="parameters" element="tns:ToStrongResponse" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyujySoapIn">
+    <wsdl:part name="parameters" element="tns:fx_liuyujy" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyujySoapOut">
+    <wsdl:part name="parameters" element="tns:fx_liuyujyResponse" />
+  </wsdl:message>
+  <wsdl:message name="fx_fenquSoapIn">
+    <wsdl:part name="parameters" element="tns:fx_fenqu" />
+  </wsdl:message>
+  <wsdl:message name="fx_fenquSoapOut">
+    <wsdl:part name="parameters" element="tns:fx_fenquResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpGetIn" />
+  <wsdl:message name="HelloWorldHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDtTableXYHttpGetIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+    <wsdl:part name="e" type="s:string" />
+    <wsdl:part name="f" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDtTableXYHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetDtSTCD8HttpGetIn">
+    <wsdl:part name="a" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDtSTCD8HttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetSQStcdTableHttpGetIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSQStcdTableHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetHDSWXTableHttpGetIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetHDSWXTableHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="DBODSWX_XY_DtHttpGetIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+    <wsdl:part name="e" type="s:string" />
+    <wsdl:part name="f" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DBODSWX_XY_DtHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetDtYQHttpGetIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+    <wsdl:part name="e" type="s:string" />
+    <wsdl:part name="f" type="s:string" />
+    <wsdl:part name="g" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDtYQHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetYQStcdTableHttpGetIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetYQStcdTableHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="DZX_DtHttpGetIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+    <wsdl:part name="e" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DZX_DtHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetliuyujyHttpGetIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetliuyujyHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetliuliangHttpGetIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetliuliangHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_sdstateHttpGetIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_sdstateHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_sdmaxHttpGetIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_sdmaxHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_stateHttpGetIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_stateHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="ToStrongHttpGetIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ToStrongHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyujyHttpGetIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+    <wsdl:part name="e" type="s:string" />
+    <wsdl:part name="f" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyujyHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="fx_fenquHttpGetIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+    <wsdl:part name="e" type="s:string" />
+    <wsdl:part name="f" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="fx_fenquHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpPostIn" />
+  <wsdl:message name="HelloWorldHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDtTableXYHttpPostIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+    <wsdl:part name="e" type="s:string" />
+    <wsdl:part name="f" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDtTableXYHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetDtSTCD8HttpPostIn">
+    <wsdl:part name="a" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDtSTCD8HttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetSQStcdTableHttpPostIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSQStcdTableHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetHDSWXTableHttpPostIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetHDSWXTableHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="DBODSWX_XY_DtHttpPostIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+    <wsdl:part name="e" type="s:string" />
+    <wsdl:part name="f" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DBODSWX_XY_DtHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetDtYQHttpPostIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+    <wsdl:part name="e" type="s:string" />
+    <wsdl:part name="f" type="s:string" />
+    <wsdl:part name="g" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDtYQHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetYQStcdTableHttpPostIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetYQStcdTableHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="DZX_DtHttpPostIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+    <wsdl:part name="e" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="DZX_DtHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetliuyujyHttpPostIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetliuyujyHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="GetliuliangHttpPostIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetliuliangHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_sdstateHttpPostIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_sdstateHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_sdmaxHttpPostIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_sdmaxHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_stateHttpPostIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyucj_stateHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="ToStrongHttpPostIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ToStrongHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataTable" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyujyHttpPostIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+    <wsdl:part name="e" type="s:string" />
+    <wsdl:part name="f" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="fx_liuyujyHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="fx_fenquHttpPostIn">
+    <wsdl:part name="a" type="s:string" />
+    <wsdl:part name="b" type="s:string" />
+    <wsdl:part name="c" type="s:string" />
+    <wsdl:part name="d" type="s:string" />
+    <wsdl:part name="e" type="s:string" />
+    <wsdl:part name="f" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="fx_fenquHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:portType name="Orcl_Idbs3Soap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDtTableXY">
+      <wsdl:input message="tns:GetDtTableXYSoapIn" />
+      <wsdl:output message="tns:GetDtTableXYSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDtSTCD8">
+      <wsdl:input message="tns:GetDtSTCD8SoapIn" />
+      <wsdl:output message="tns:GetDtSTCD8SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSQStcdTable">
+      <wsdl:input message="tns:GetSQStcdTableSoapIn" />
+      <wsdl:output message="tns:GetSQStcdTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHDSWXTable">
+      <wsdl:input message="tns:GetHDSWXTableSoapIn" />
+      <wsdl:output message="tns:GetHDSWXTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DBODSWX_XY_Dt">
+      <wsdl:input message="tns:DBODSWX_XY_DtSoapIn" />
+      <wsdl:output message="tns:DBODSWX_XY_DtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDtYQ">
+      <wsdl:input message="tns:GetDtYQSoapIn" />
+      <wsdl:output message="tns:GetDtYQSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetYQStcdTable">
+      <wsdl:input message="tns:GetYQStcdTableSoapIn" />
+      <wsdl:output message="tns:GetYQStcdTableSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DZX_Dt">
+      <wsdl:input message="tns:DZX_DtSoapIn" />
+      <wsdl:output message="tns:DZX_DtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Getliuyujy">
+      <wsdl:input message="tns:GetliuyujySoapIn" />
+      <wsdl:output message="tns:GetliuyujySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Getliuliang">
+      <wsdl:input message="tns:GetliuliangSoapIn" />
+      <wsdl:output message="tns:GetliuliangSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_sdstate">
+      <wsdl:input message="tns:fx_liuyucj_sdstateSoapIn" />
+      <wsdl:output message="tns:fx_liuyucj_sdstateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_sdmax">
+      <wsdl:input message="tns:fx_liuyucj_sdmaxSoapIn" />
+      <wsdl:output message="tns:fx_liuyucj_sdmaxSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_state">
+      <wsdl:input message="tns:fx_liuyucj_stateSoapIn" />
+      <wsdl:output message="tns:fx_liuyucj_stateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ToStrong">
+      <wsdl:input message="tns:ToStrongSoapIn" />
+      <wsdl:output message="tns:ToStrongSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyujy">
+      <wsdl:input message="tns:fx_liuyujySoapIn" />
+      <wsdl:output message="tns:fx_liuyujySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fx_fenqu">
+      <wsdl:input message="tns:fx_fenquSoapIn" />
+      <wsdl:output message="tns:fx_fenquSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Orcl_Idbs3HttpGet">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpGetIn" />
+      <wsdl:output message="tns:HelloWorldHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDtTableXY">
+      <wsdl:input message="tns:GetDtTableXYHttpGetIn" />
+      <wsdl:output message="tns:GetDtTableXYHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDtSTCD8">
+      <wsdl:input message="tns:GetDtSTCD8HttpGetIn" />
+      <wsdl:output message="tns:GetDtSTCD8HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSQStcdTable">
+      <wsdl:input message="tns:GetSQStcdTableHttpGetIn" />
+      <wsdl:output message="tns:GetSQStcdTableHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHDSWXTable">
+      <wsdl:input message="tns:GetHDSWXTableHttpGetIn" />
+      <wsdl:output message="tns:GetHDSWXTableHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DBODSWX_XY_Dt">
+      <wsdl:input message="tns:DBODSWX_XY_DtHttpGetIn" />
+      <wsdl:output message="tns:DBODSWX_XY_DtHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDtYQ">
+      <wsdl:input message="tns:GetDtYQHttpGetIn" />
+      <wsdl:output message="tns:GetDtYQHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetYQStcdTable">
+      <wsdl:input message="tns:GetYQStcdTableHttpGetIn" />
+      <wsdl:output message="tns:GetYQStcdTableHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DZX_Dt">
+      <wsdl:input message="tns:DZX_DtHttpGetIn" />
+      <wsdl:output message="tns:DZX_DtHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Getliuyujy">
+      <wsdl:input message="tns:GetliuyujyHttpGetIn" />
+      <wsdl:output message="tns:GetliuyujyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Getliuliang">
+      <wsdl:input message="tns:GetliuliangHttpGetIn" />
+      <wsdl:output message="tns:GetliuliangHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_sdstate">
+      <wsdl:input message="tns:fx_liuyucj_sdstateHttpGetIn" />
+      <wsdl:output message="tns:fx_liuyucj_sdstateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_sdmax">
+      <wsdl:input message="tns:fx_liuyucj_sdmaxHttpGetIn" />
+      <wsdl:output message="tns:fx_liuyucj_sdmaxHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_state">
+      <wsdl:input message="tns:fx_liuyucj_stateHttpGetIn" />
+      <wsdl:output message="tns:fx_liuyucj_stateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ToStrong">
+      <wsdl:input message="tns:ToStrongHttpGetIn" />
+      <wsdl:output message="tns:ToStrongHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyujy">
+      <wsdl:input message="tns:fx_liuyujyHttpGetIn" />
+      <wsdl:output message="tns:fx_liuyujyHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fx_fenqu">
+      <wsdl:input message="tns:fx_fenquHttpGetIn" />
+      <wsdl:output message="tns:fx_fenquHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="Orcl_Idbs3HttpPost">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpPostIn" />
+      <wsdl:output message="tns:HelloWorldHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDtTableXY">
+      <wsdl:input message="tns:GetDtTableXYHttpPostIn" />
+      <wsdl:output message="tns:GetDtTableXYHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDtSTCD8">
+      <wsdl:input message="tns:GetDtSTCD8HttpPostIn" />
+      <wsdl:output message="tns:GetDtSTCD8HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSQStcdTable">
+      <wsdl:input message="tns:GetSQStcdTableHttpPostIn" />
+      <wsdl:output message="tns:GetSQStcdTableHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetHDSWXTable">
+      <wsdl:input message="tns:GetHDSWXTableHttpPostIn" />
+      <wsdl:output message="tns:GetHDSWXTableHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DBODSWX_XY_Dt">
+      <wsdl:input message="tns:DBODSWX_XY_DtHttpPostIn" />
+      <wsdl:output message="tns:DBODSWX_XY_DtHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDtYQ">
+      <wsdl:input message="tns:GetDtYQHttpPostIn" />
+      <wsdl:output message="tns:GetDtYQHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetYQStcdTable">
+      <wsdl:input message="tns:GetYQStcdTableHttpPostIn" />
+      <wsdl:output message="tns:GetYQStcdTableHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DZX_Dt">
+      <wsdl:input message="tns:DZX_DtHttpPostIn" />
+      <wsdl:output message="tns:DZX_DtHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Getliuyujy">
+      <wsdl:input message="tns:GetliuyujyHttpPostIn" />
+      <wsdl:output message="tns:GetliuyujyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Getliuliang">
+      <wsdl:input message="tns:GetliuliangHttpPostIn" />
+      <wsdl:output message="tns:GetliuliangHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_sdstate">
+      <wsdl:input message="tns:fx_liuyucj_sdstateHttpPostIn" />
+      <wsdl:output message="tns:fx_liuyucj_sdstateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_sdmax">
+      <wsdl:input message="tns:fx_liuyucj_sdmaxHttpPostIn" />
+      <wsdl:output message="tns:fx_liuyucj_sdmaxHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_state">
+      <wsdl:input message="tns:fx_liuyucj_stateHttpPostIn" />
+      <wsdl:output message="tns:fx_liuyucj_stateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ToStrong">
+      <wsdl:input message="tns:ToStrongHttpPostIn" />
+      <wsdl:output message="tns:ToStrongHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyujy">
+      <wsdl:input message="tns:fx_liuyujyHttpPostIn" />
+      <wsdl:output message="tns:fx_liuyujyHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fx_fenqu">
+      <wsdl:input message="tns:fx_fenquHttpPostIn" />
+      <wsdl:output message="tns:fx_fenquHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Orcl_Idbs3Soap" type="tns:Orcl_Idbs3Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDtTableXY">
+      <soap:operation soapAction="http://tempuri.org/GetDtTableXY" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDtSTCD8">
+      <soap:operation soapAction="http://tempuri.org/GetDtSTCD8" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSQStcdTable">
+      <soap:operation soapAction="http://tempuri.org/GetSQStcdTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHDSWXTable">
+      <soap:operation soapAction="http://tempuri.org/GetHDSWXTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DBODSWX_XY_Dt">
+      <soap:operation soapAction="http://tempuri.org/DBODSWX_XY_Dt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDtYQ">
+      <soap:operation soapAction="http://tempuri.org/GetDtYQ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetYQStcdTable">
+      <soap:operation soapAction="http://tempuri.org/GetYQStcdTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DZX_Dt">
+      <soap:operation soapAction="http://tempuri.org/DZX_Dt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getliuyujy">
+      <soap:operation soapAction="http://tempuri.org/Getliuyujy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getliuliang">
+      <soap:operation soapAction="http://tempuri.org/Getliuliang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_sdstate">
+      <soap:operation soapAction="http://tempuri.org/fx_liuyucj_sdstate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_sdmax">
+      <soap:operation soapAction="http://tempuri.org/fx_liuyucj_sdmax" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_state">
+      <soap:operation soapAction="http://tempuri.org/fx_liuyucj_state" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ToStrong">
+      <soap:operation soapAction="http://tempuri.org/ToStrong" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyujy">
+      <soap:operation soapAction="http://tempuri.org/fx_liuyujy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_fenqu">
+      <soap:operation soapAction="http://tempuri.org/fx_fenqu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Orcl_Idbs3Soap12" type="tns:Orcl_Idbs3Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDtTableXY">
+      <soap12:operation soapAction="http://tempuri.org/GetDtTableXY" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDtSTCD8">
+      <soap12:operation soapAction="http://tempuri.org/GetDtSTCD8" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSQStcdTable">
+      <soap12:operation soapAction="http://tempuri.org/GetSQStcdTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHDSWXTable">
+      <soap12:operation soapAction="http://tempuri.org/GetHDSWXTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DBODSWX_XY_Dt">
+      <soap12:operation soapAction="http://tempuri.org/DBODSWX_XY_Dt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDtYQ">
+      <soap12:operation soapAction="http://tempuri.org/GetDtYQ" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetYQStcdTable">
+      <soap12:operation soapAction="http://tempuri.org/GetYQStcdTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DZX_Dt">
+      <soap12:operation soapAction="http://tempuri.org/DZX_Dt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getliuyujy">
+      <soap12:operation soapAction="http://tempuri.org/Getliuyujy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getliuliang">
+      <soap12:operation soapAction="http://tempuri.org/Getliuliang" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_sdstate">
+      <soap12:operation soapAction="http://tempuri.org/fx_liuyucj_sdstate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_sdmax">
+      <soap12:operation soapAction="http://tempuri.org/fx_liuyucj_sdmax" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_state">
+      <soap12:operation soapAction="http://tempuri.org/fx_liuyucj_state" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ToStrong">
+      <soap12:operation soapAction="http://tempuri.org/ToStrong" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyujy">
+      <soap12:operation soapAction="http://tempuri.org/fx_liuyujy" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_fenqu">
+      <soap12:operation soapAction="http://tempuri.org/fx_fenqu" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Orcl_Idbs3HttpGet" type="tns:Orcl_Idbs3HttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDtTableXY">
+      <http:operation location="/GetDtTableXY" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDtSTCD8">
+      <http:operation location="/GetDtSTCD8" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSQStcdTable">
+      <http:operation location="/GetSQStcdTable" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHDSWXTable">
+      <http:operation location="/GetHDSWXTable" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DBODSWX_XY_Dt">
+      <http:operation location="/DBODSWX_XY_Dt" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDtYQ">
+      <http:operation location="/GetDtYQ" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetYQStcdTable">
+      <http:operation location="/GetYQStcdTable" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DZX_Dt">
+      <http:operation location="/DZX_Dt" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getliuyujy">
+      <http:operation location="/Getliuyujy" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getliuliang">
+      <http:operation location="/Getliuliang" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_sdstate">
+      <http:operation location="/fx_liuyucj_sdstate" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_sdmax">
+      <http:operation location="/fx_liuyucj_sdmax" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_state">
+      <http:operation location="/fx_liuyucj_state" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ToStrong">
+      <http:operation location="/ToStrong" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyujy">
+      <http:operation location="/fx_liuyujy" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_fenqu">
+      <http:operation location="/fx_fenqu" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Orcl_Idbs3HttpPost" type="tns:Orcl_Idbs3HttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDtTableXY">
+      <http:operation location="/GetDtTableXY" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDtSTCD8">
+      <http:operation location="/GetDtSTCD8" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSQStcdTable">
+      <http:operation location="/GetSQStcdTable" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetHDSWXTable">
+      <http:operation location="/GetHDSWXTable" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DBODSWX_XY_Dt">
+      <http:operation location="/DBODSWX_XY_Dt" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDtYQ">
+      <http:operation location="/GetDtYQ" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetYQStcdTable">
+      <http:operation location="/GetYQStcdTable" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DZX_Dt">
+      <http:operation location="/DZX_Dt" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getliuyujy">
+      <http:operation location="/Getliuyujy" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getliuliang">
+      <http:operation location="/Getliuliang" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_sdstate">
+      <http:operation location="/fx_liuyucj_sdstate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_sdmax">
+      <http:operation location="/fx_liuyucj_sdmax" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyucj_state">
+      <http:operation location="/fx_liuyucj_state" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ToStrong">
+      <http:operation location="/ToStrong" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_liuyujy">
+      <http:operation location="/fx_liuyujy" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fx_fenqu">
+      <http:operation location="/fx_fenqu" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Orcl_Idbs3">
+    <wsdl:port name="Orcl_Idbs3Soap" binding="tns:Orcl_Idbs3Soap">
+      <soap:address location="http://218.1.102.107:702/Orcl_Idbs3.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Orcl_Idbs3Soap12" binding="tns:Orcl_Idbs3Soap12">
+      <soap12:address location="http://218.1.102.107:702/Orcl_Idbs3.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Orcl_Idbs3HttpGet" binding="tns:Orcl_Idbs3HttpGet">
+      <http:address location="http://218.1.102.107:702/Orcl_Idbs3.asmx" />
+    </wsdl:port>
+    <wsdl:port name="Orcl_Idbs3HttpPost" binding="tns:Orcl_Idbs3HttpPost">
+      <http:address location="http://218.1.102.107:702/Orcl_Idbs3.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
